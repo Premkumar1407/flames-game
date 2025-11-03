@@ -109,7 +109,7 @@ button:hover {
   }
 
   .container {
-    width: 75%;
+    width: 95%;
     padding: 25px 15px;
   }
 
@@ -126,4 +126,5 @@ button:hover {
     font-size: 1.2rem;
   }
 }
+
 
