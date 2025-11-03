@@ -1,6 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background: url('love-wall.jpeg') no-repeat center center fixed;
+  background: url('image/love-wall.jpeg') no-repeat center center fixed;
   background-size: cover;      /* makes image cover entire screen */
   display: flex;
   justify-content: center;
@@ -74,4 +74,5 @@ button:hover {
   0% { transform: scale(0.5); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }
 }
+
 
