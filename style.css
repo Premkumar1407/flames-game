@@ -1,54 +1,43 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: url('image/love-wall.jpeg') no-repeat center center fixed;
-  background-size: cover; /* Cover entire screen */
+  background-size: cover; /* makes image cover entire screen */
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
-  padding: 10px; /* small padding for mobile */
 }
 
 .container {
   text-align: center;
   background: rgba(255, 255, 255, 0.9);
-  padding: 40px 30px;
+  padding: 40px;
   border-radius: 25px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  width: 90%;
-  max-width: 400px; /* prevent overflow on large screens */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  width: 350px;
   animation: fadeIn 1s ease-in-out;
 }
 
 h1 {
   font-family: 'Pacifico', cursive;
   color: #ff006e;
-  font-size: 2.2rem;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
 }
 
 .tagline {
   color: #6b6b6b;
   margin-bottom: 20px;
-  font-size: 1rem;
 }
 
 input {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  border: 2px solid #f50707;
+  width: 85%;
+  padding: 10px;
+  margin: 10px 0;
+  border-color: #f50707;
   border-radius: 8px;
   font-size: 1rem;
   text-align: center;
-  outline: none;
-  transition: 0.3s;
-}
-
-input:focus {
-  border-color: #ff006e;
-  box-shadow: 0 0 5px rgba(255, 0, 110, 0.5);
 }
 
 button {
@@ -56,12 +45,11 @@ button {
   color: white;
   border: none;
   border-radius: 8px;
-  padding: 12px 25px;
+  padding: 10px 20px;
   font-size: 1.2rem;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 100%;
 }
 
 button:hover {
@@ -77,54 +65,24 @@ button:hover {
   animation: pop 0.5s ease-in-out;
 }
 
-/* ---------- Animations ---------- */
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 @keyframes pop {
-  0% { transform: scale(0.5); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
-}
-
-/* ---------- Responsive Design ---------- */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 1.8rem;
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
   }
-
-  .container {
-    padding: 30px 20px;
-  }
-
-  .result {
-    font-size: 1.3rem;
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
-
-@media (max-width: 480px) {
-  body {
-    background-attachment: scroll; /* fix background flicker issue on phones */
-  }
-
-  .container {
-    width: 95%;
-    padding: 25px 15px;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  button {
-    font-size: 1rem;
-    padding: 10px;
-  }
-
-  .result {
-    font-size: 1.2rem;
-  }
-}
-
-
