@@ -1,0 +1,76 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('images/love-wall.jpeg') no-repeat center center fixed;
+  background-size: cover;      /* makes image cover entire screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  width: 350px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #ff006e;
+  font-size: 2.5rem;
+}
+
+.tagline {
+  color: #6b6b6b;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 85%;
+  padding: 10px;
+  margin: 10px 0;
+  border-color: #f50707;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+button {
+  background-color: #05ef28;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6396a;
+  transform: scale(1.05);
+}
+
+.result {
+  margin-top: 25px;
+  font-size: 1.5rem;
+  color: #ff006e;
+  font-weight: 600;
+  animation: pop 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
